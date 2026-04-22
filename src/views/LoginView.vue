@@ -5,19 +5,19 @@
 
     <!-- CONTEÚDO (logo + texto) -->
     <div class="relative z-2 w-full h-screen flex justify-around items-center">
-      <div class="flex flex-col items-center justify-center w-2/6">
-        <img src="../assets/logo.svg" class="max-w-72 gap-8" />
-        <h3 class="text-2xl text-[#A6FF95]">Automatize. Organize. Converta.</h3>
+      <div class="flex flex-col items-center justify-center w-2/6 gap-4">
+        <img src="../assets/logo.svg" class="max-w-72" />
+        <h3 class="text-2xl text-(--primaryColor)">Automatize. Organize. Converta.</h3>
       </div>
 
       <!-- LADO DIREITO (login) -->
-      <div class="right-content w-2/6 text-[#111601] py-10 px-20">
+      <div class="right-content w-2/6 text-[#111601] py-10 px-20 max-w-140">
         <!-- form -->
         <div>
           <h2 class="text-5xl font-semibold">LOGIN</h2>
           <p class="text-2xl">Bem vindo de volta!</p>
         </div>
-        <div>
+        <div class="flex flex-col gap-6">
           <div class="p-3 flex gap-2 border-b border-[#111601]">
             <img src="../assets/icons/mail.svg" alt="mail" />
             <input
@@ -51,8 +51,8 @@
   width: 80vw;
   height: 130vh;
   background: #111601;
-  border-radius: 8rem;
-  transform: rotate(-36deg);
+  border-radius: 10rem;
+  transform: rotate(-40deg);
   z-index: 1;
 }
 
