@@ -5,38 +5,66 @@
 
     <!-- CONTEÚDO (logo + texto) -->
     <div class="relative z-2 w-full h-screen flex justify-around items-center">
-      <div class="flex flex-col items-center justify-center w-2/6 gap-4">
-        <img src="../assets/logo.svg" class="max-w-72" />
-        <h3 class="text-2xl text-(--primaryColor)">Automatize. Organize. Converta.</h3>
+      <div class="flex flex-col items-center justify-center w-2/6 gap-2">
+        <img src="../assets/logo.svg" class="max-w-72 w-5/8" />
+        <h3 class="text-2xl text-[#A6FF95]">Automatize. Organize. Converta.</h3>
       </div>
 
       <!-- LADO DIREITO (login) -->
-      <div class="right-content w-2/6 text-[#111601] py-10 px-20 max-w-140">
+      <div class="right-content w-2/6 flex flex-col text-[#111601] py-10 px-20 max-w-140 gap-8">
         <!-- form -->
-        <div>
-          <h2 class="text-5xl font-semibold">LOGIN</h2>
-          <p class="text-2xl">Bem vindo de volta!</p>
+        <div class="flex flex-col">
+          <h2 class="text-2xl font-semibold">LOGIN</h2>
+          <p class="text-lg">Bem vindo de volta!</p>
         </div>
-        <div class="flex flex-col gap-6">
-          <div class="p-3 flex gap-2 border-b border-[#111601]">
+        <!-- input part-->
+        <div class="flex flex-col gap-2">
+          <div class="p-2 flex gap-2 border-b border-[#111601]">
             <img src="../assets/icons/mail.svg" alt="mail" />
             <input
               type="text"
               placeholder="Email"
-              class="placeholder:text-[#111601] placeholder:text-base w-full outline-none"
+              class="placeholder:text-[#111601] placeholder:text-sm w-full outline-none"
               name=""
               id=""
             />
           </div>
+
           <div>
-            <div class="p-3 flex gap-2 border-b border-[#111601] justify-between">
+            <div class="p-2 flex gap-2 border-b border-[#111601] justify-between">
               <div class="flex gap-2">
                 <img src="../assets/icons/lock.svg" alt="lock" />
-                <input type="password" placeholder="Senha" class="placeholder:text-[#111601] placeholder:text-base w-full outline-none" name="" id=""/>
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  class="placeholder:text-[#111601] placeholder:text-sm  w-full outline-none"
+                  name=""
+                  id=""
+                />
               </div>
-              <button><img src="../assets/icons/eye.svg" alt=""></button>
+              <button><img src="../assets/icons/eye.svg" alt="" /></button>
+            </div>
+            <div class="flex gap-2 my-2">
+              <input type="checkbox" />
+              <p class="text-xs">Lembrar minha senha</p>
             </div>
           </div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <button
+            class=" w-full p-4 rounded-lg bg-[#111601] text-white hover:bg-[#A6FF95] hover:text-black hover:font-semibold hover:scale-105 text-sm"
+          >
+            Entrar
+          </button>
+          <a href="" class="text-center font-semibold text-sm">Esqueci minha senha</a>
+        </div>
+        <div class="flex flex-col text-center gap-1">
+          <div class="flex flex-col text-sm">
+            <p>Não tem Acesso?</p>
+            <p>Para criar sua conta em poucos passos</p>
+          </div>
+          <a href="" class="font-semibold text-sm">Clique Aqui!</a>
         </div>
       </div>
     </div>
