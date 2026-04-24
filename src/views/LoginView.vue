@@ -35,14 +35,15 @@
               <div class="flex gap-2">
                 <img src="../assets/icons/lock.svg" alt="lock" />
                 <input
-                  type="password"
+                  :type="showPassword ? 'text' : 'password'"
                   placeholder="Senha"
-                  class="placeholder:text-[#111601] placeholder:text-sm  w-full outline-none"
-                  name=""
-                  id=""
+                  class="placeholder:text-[#111601] placeholder:text-sm w-full outline-none"
                 />
               </div>
-              <button><img src="../assets/icons/eye.svg" alt="" /></button>
+
+              <button type="button" @click="showPassword = !showPassword">
+                <img :src="showPassword ? eyeOff : eye" />
+              </button>
             </div>
             <div class="flex gap-2 my-2">
               <input type="checkbox" />
@@ -53,7 +54,7 @@
 
         <div class="flex flex-col gap-4">
           <button
-            class=" w-full p-4 rounded-lg bg-[#111601] text-white hover:bg-[#A6FF95] hover:text-black hover:font-semibold hover:scale-105 text-sm"
+            class="w-full p-4 rounded-lg bg-[#111601] text-white hover:bg-[#A6FF95] hover:text-black hover:font-semibold hover:scale-105 text-sm"
           >
             Entrar
           </button>
@@ -86,3 +87,12 @@
 
 /* CONTEÚDO EM CIMA */
 </style>
+
+<script setup>
+import { ref } from 'vue'
+
+import eye from '../assets/icons/eye.svg'
+import eyeOff from '../assets/icons/eye-close.svg'
+
+const showPassword = ref(false)
+</script>
